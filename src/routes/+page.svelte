@@ -400,6 +400,14 @@
 	}
 </script>
 
+<svelte:head>
+	<title>
+		{totalPhotos > 0
+			? `(${totalPhotos}) PhotoGeo - Tempel Peta Google Maps & Waktu`
+			: 'PhotoGeo - Tempel Peta Google Maps, Tanggal & Jam pada Foto'}
+	</title>
+</svelte:head>
+
 <div
 	class="flex min-h-screen flex-col bg-slate-50 font-sans text-slate-800 selection:bg-red-500 selection:text-white dark:bg-slate-950 dark:text-slate-100"
 >
